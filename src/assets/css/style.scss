@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+.v-application {
+  font-family: 'Inter' !important;
+  font-weight: 400 !important;
+}
+
+p{
+  font-family: 'Inter';
+  font-weight: 400;
+}
+
+.header {
+  padding: 40px 0 20px 0;
+  border-bottom: 1px solid #EFEFEF;
+
+  .header-menu {
+    margin-left: 20px;
+
+    li {
+      display: inline-block;
+      list-style: none;
+      margin: 0 15px;
+
+      a {
+        font-family: 'DM Sans';
+        color: #000;
+        text-decoration: none;
+        background-image: linear-gradient(
+                        to right,
+                        #000,
+                        #000 50%,
+                        #000 50%
+        );
+        background-position: -100%;
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+      }
+
+      a:before {
+        content: '';
+        background: #3D00B7;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      a:hover {
+        background-position: 0;
+      }
+
+      a:hover::before {
+        width: 100%;
+      }
+
+    }
+  }
+}
+
+.project-button {
+  color: #3D00B7;
+  border: 2px solid #3D00B7;
+  padding: 8px 20px;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+}
+
+.project-button:hover {
+  color: #FFF;
+  background-color: #3D00B7;
+}
+
+.button-style {
+  color: #FFF !important;
+  text-decoration: none;
+  border: 2px solid #3D00B7;
+  padding: 12px 30px;
+  border-radius: 25px;
+  background-color: #6031BB;
+  display: inline-block;
+  transition: all 0.5s ease-in-out;
+}
+
+.button-style:hover {
+  color: #3D00B7 !important;
+  background-color: #FFF;
+}
+
+.main-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+
+  h1 {
+    font-size: 60px;
+    font-family: Inter;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 25px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1;
+    color: #413F3F;
+    text-align: left;
+  }
+
+  p {
+    margin-top: 30px;
+    color: #413F3F;
+    margin: 20px 0;
+  }
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 1.2;
+  //margin-bottom: 30px;
+}
+
+p {
+  color: #413F3F;
+}
+
+.introducing-area {
+  padding-top: 100px;
+  margin-bottom: 100px;
+
+  .introducing-item {
+    img {
+      width: 100%;
+      height: 340px;
+      display: block;
+    }
+
+    h3 {
+      font-weight: normal;
+      font-size: 20px;
+      margin: 20px auto;
+      width: 70%;
+      text-align: center;
+      line-height: 1;
+    }
+  }
+}
+
+.ecosystem-area {
+  margin-bottom: 100px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.business-model-area {
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+.our-team-area {
+  margin-bottom: 100px;
+  margin-top: 80px !important;
+
+  .out-team-item {
+    img {
+      width: 70%;
+    }
+
+    h5 {
+      font-size: 20px;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    p {
+      margin-top: 0px;
+    }
+  }
+}
+
+
+.roadmap {
+  width: 80%;
+  height: 3px;
+  background-color: #3D00B7;
+  position: relative;
+  margin: 0 auto;
+
+  .roadmap-item {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: #3D00B7;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    margin-top: -17px;
+  }
+
+  .roadmap-item2 {
+    left: 35%;
+  }
+
+  .roadmap-item3 {
+    left: 65%;
+  }
+
+  .roadmap-item4 {
+    left: 100%;
+  }
+}
+
+.roadmap-list {
+  display: flex;
+  justify-items: center;
+  align-content: center;
+
+  .roadmap-list-item {
+    color: #292D32;
+    border: 1px solid #3D00B7;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 1%;
+    margin-top: 50px;
+    min-width: 23%;
+  }
+
+  .roadmap-list-item ul {
+    padding-left: 20px;
+    box-sizing: border-box;
+    line-height: 1.4;
+  }
+
+  .roadmap-list-item h5 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+.footer-area {
+  padding-top: 50px;
+  background-color: #f1ecfd;
+  margin-top: 50px;
+
+  .social-links {
+    //display: flex;
+    //justify-items: center;
+    //align-content: center;
+
+    a {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      margin-right: 14px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .footer-menu {
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 20px;
+
+        a {
+          color: #000000;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .footer-contacts {
+    a {
+      color: #000000;
+    }
+  }
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 891px) {
+  .mobile-only {
+    display: block;
+  }
+  .business-model-area {
+    .business-model-item {
+      overflow-x: scroll;
+    }
+
+    img {
+      display: block;
+      max-width: auto;
+    }
+  }
+
+  .roadmap {
+    display: none;
+  }
+  .roadmap-list {
+    display: block;
+    padding-left: 30px;
+    margin-left: 20px;
+    border-left: 3px solid #293BFE;
+    position: relative;
+  }
+  .roadmap-list:before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 120px;
+    background-color: #FFF;
+    top: -31px;
+    left: -10px;
+  }
+  .roadmap-list:after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 130px;
+    background-color: #FFF;
+    bottom: 0;
+    left: -10px;
+  }
+  .roadmap-list-item {
+    position: relative;
+    margin: 0 !important;
+    margin-bottom: 40px !important;
+  }
+  .roadmap-list-item:before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: #293BFE;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -50px;
+    z-index: 2;
+  }
+  .desktop-only {
+    display: none;
+  }
+  .introducing-area {
+    padding-top: 50px;
+    margin-bottom: 0;
+  }
+  .ecosystem-area {
+    margin-bottom: 0;
+  }
+  .roadmap-area {
+    padding: 0 20px;
+  }
+  .footer-area {
+    text-align: center;
+  }
+  .business-model-area img {
+    max-width: none;
+  }
+  .main-area {
+    text-align: center;
+    img {
+      margin-left: -10px;
+    }
+    h2 {
+      text-align: center;
+    }
+  }
+  .our-team-area {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .v-application .mb-4 {
+    margin-bottom: 5px !important;
+  }
+  .v-application .mb-8 {
+    margin-bottom: 10px !important;
+  }
+  .v-application .mt-4 {
+    margin-top: 5px !important;
+  }
+  .v-application .mt-8 {
+    margin-top: 10px !important;
+  }
+  .main-area {
+    margin-top: 10px;
+  }
+  .v-navigation-drawer__content {
+    .project-button {
+      margin-top: 30px;
+    }
+  }
+  .v-navigation-drawer__content {
+    padding: 20px;
+  }
+  .menu__burger {
+    display: block;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 0;
+  }
+  .menu__burger span {
+    position: absolute;
+    display: block;
+    background-color: #000;
+    height: 2px;
+    width: 30px;
+    top: 18px;
+    left: 5px;
+    right: 5px;
+    transition: 0.5s;
+    border-radius: 5px;
+  }
+  .menu__burger span::after,
+  .menu__burger span::before {
+    position: absolute;
+    display: block;
+    height: 2px;
+    background-color: #000;
+    content: '';
+    width: 100%;
+    transition: 0.5s;
+    border-radius: 5px;
+  }
+  .menu__burger span::after {
+    top: -10px;
+  }
+  .menu__burger span::before {
+    bottom: -10px;
+  }
+  .menu__burger.close span {
+    background-color: transparent;
+    transition: 0.5s;
+  }
+  .menu__burger.close span::after {
+    top: 0;
+    transform: rotate(45deg);
+    transition: 0.5s;
+  }
+  .menu__burger.close span::before {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+  }
+}
+
+.v-list-item--link {
+  a {
+    color: #000 !important;
+    text-decoration: none;
+    font-family: 'DM Sans';
+    margin-top: 20px;
+  }
+}
+
+
