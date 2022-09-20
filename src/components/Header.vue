@@ -19,10 +19,12 @@
 
       <ul class="header-menu desktop-only">
         <li><a href="https://docs.nfitness.space" target="_blank">Whitepaper</a></li>
-        <li><a href="https://www.canva.com/design/DAFLvXYt2NI/O4FFpZ-jwpmDjhESgB6k-g/view?utm_content=DAFLvXYt2NI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">PitchDeck</a></li>
+        <li><a
+            href="https://www.canva.com/design/DAFLvXYt2NI/O4FFpZ-jwpmDjhESgB6k-g/view?utm_content=DAFLvXYt2NI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+            target="_blank">PitchDeck</a></li>
       </ul>
 
-      <button class="project-button desktop-only">Go to App</button>
+      <button class="project-button desktop-only" @click="redirectToApp">Go to App</button>
 
     </v-app-bar>
 
@@ -45,9 +47,11 @@
           <v-list-item><a href="#roadmap">Roadmap</a></v-list-item>
 
           <v-list-item><a href="https://docs.nfitness.space" target="_blank">Whitepaper</a></v-list-item>
-          <v-list-item><a href="https://www.canva.com/design/DAFLvXYt2NI/O4FFpZ-jwpmDjhESgB6k-g/view?utm_content=DAFLvXYt2NI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">PitchDeck</a></v-list-item>
+          <v-list-item><a
+              href="https://www.canva.com/design/DAFLvXYt2NI/O4FFpZ-jwpmDjhESgB6k-g/view?utm_content=DAFLvXYt2NI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+              target="_blank">PitchDeck</a></v-list-item>
 
-          <button class="project-button">Go to App</button>
+          <button class="project-button" @click="redirectToApp">Go to App</button>
 
         </v-list-item-group>
       </v-list>
@@ -63,6 +67,12 @@ export default {
     drawer: false,
     group: null
   }),
+
+  methods: {
+    redirectToApp() {
+      window.open("https://app.nfitness.space");
+    }
+  },
 
   watch: {
     group() {

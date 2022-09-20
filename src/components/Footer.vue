@@ -35,14 +35,14 @@
             <li><a
                 href="https://www.canva.com/design/DAFLvXYt2NI/O4FFpZ-jwpmDjhESgB6k-g/view?utm_content=DAFLvXYt2NI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
                 target="_blank">Pitchdeck</a></li>
-            <li><a href="#">Go to app</a></li>
+            <li><a href="https://app.nfitness.space" target="_blank">Go to app</a></li>
           </ul>
         </v-col>
         <v-col cols="12" md="3" class="footer-contacts">
           <h4 class="mb-4">Keep in touch</h4>
           <p>
             Phone:
-            <a href="tel:+3487841378">+3487841378</a>
+            <a href="tel:+393487841378">+393487841378</a>
           </p>
           <p>
             Mail:
