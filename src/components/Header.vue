@@ -18,8 +18,8 @@
       <v-spacer class="desktop-only"></v-spacer>
 
       <ul class="header-menu desktop-only">
-        <li><a href="#">Whitepaper</a></li>
-        <li><a href="#">PitchDeck</a></li>
+        <li><a href="https://docs.nfitness.space" target="_blank">Whitepaper</a></li>
+        <li><a href="https://www.canva.com/design/DAFLvXYt2NI/O4FFpZ-jwpmDjhESgB6k-g/view?utm_content=DAFLvXYt2NI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">PitchDeck</a></li>
       </ul>
 
       <button class="project-button desktop-only">Go to App</button>
@@ -31,10 +31,7 @@
         absolute
         temporary
     >
-      <v-list
-          nav
-          dense
-      >
+      <v-list nav dense>
         <v-list-item-group
             v-model="group"
             active-class="deep-purple--text text--accent-4"
@@ -47,8 +44,8 @@
           <v-list-item><a href="#team">Team</a></v-list-item>
           <v-list-item><a href="#roadmap">Roadmap</a></v-list-item>
 
-          <v-list-item><a href="#">Whitepaper</a></v-list-item>
-          <v-list-item><a href="#">PitchDeck</a></v-list-item>
+          <v-list-item><a href="https://docs.nfitness.space" target="_blank">Whitepaper</a></v-list-item>
+          <v-list-item><a href="https://www.canva.com/design/DAFLvXYt2NI/O4FFpZ-jwpmDjhESgB6k-g/view?utm_content=DAFLvXYt2NI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">PitchDeck</a></v-list-item>
 
           <button class="project-button">Go to App</button>
 
@@ -59,16 +56,12 @@
 </template>
 <script>
 
-import {mdiAccount} from "@mdi/js";
 
 export default {
   name: 'Header',
   data: () => ({
     drawer: false,
-    group: null,
-    icons: {
-      mdiAccount
-    }
+    group: null
   }),
 
   watch: {

@@ -24,14 +24,19 @@
       </div>
     </v-col>
     <v-col cols="12" md="12" class="text-center mb-8">
-      <button class="project-button">Pitch deck</button>
+      <button class="project-button" @click="redirectPitch">Pitch deck</button>
     </v-col>
   </v-row>
 </template>
 
 <script>
 export default {
-  name: "Business"
+  name: "Business",
+  methods: {
+    redirectPitch() {
+      window.open("https://www.canva.com/design/DAFLvXYt2NI/O4FFpZ-jwpmDjhESgB6k-g/view?utm_content=DAFLvXYt2NI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink");
+    }
+  }
 }
 </script>
 

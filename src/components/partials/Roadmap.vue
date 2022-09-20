@@ -41,14 +41,19 @@
       </div>
     </div>
     <v-col class="text-center mt-8 mb-8">
-      <button class="project-button">Whitepaper</button>
+      <button class="project-button" @click="redirect">Whitepaper</button>
     </v-col>
   </v-row>
 </template>
 
 <script>
 export default {
-  name: "Roadmap"
+  name: "Roadmap",
+  methods: {
+    redirect() {
+      window.open("https://docs.nfitness.space");
+    }
+  }
 }
 </script>
 
