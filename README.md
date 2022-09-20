@@ -1,6 +1,6 @@
 # NFiTNESS
-# P2P fitness blockchain marketplace based on collective experience
-# demo : https://nfitness.space/
+P2P fitness blockchain marketplace based on collective experience
+demo : https://nfitness.space/
 
 ## Project setup
 ```
