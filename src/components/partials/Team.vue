@@ -6,7 +6,7 @@
     <v-col cols="12" md="4" class="out-team-item text-center">
       <img src="@/assets/images/Ellipse 97.png" alt="">
       <h5>Liliana Bahnaru</h5>
-      <p>Founder</p>
+      <p>Fitness/Yoga Trainer</p>
     </v-col>
     <v-col cols="12" md="4" class="out-team-item text-center">
       <img src="@/assets/images/Ellipse 96.png" alt="">
@@ -14,9 +14,9 @@
       <p>Project Manager</p>
     </v-col>
     <v-col cols="12" md="4" class="out-team-item text-center">
-      <img src="@/assets/images/Ellipse 98.png" alt="">
-      <h5>Tudor Iovita</h5>
-      <p>Development Lead</p>
+      <img src="@/assets/images/2022-09-23 16.05.52.jpg" alt="">
+      <h5>Andrei Tintari</h5>
+      <p>Founder / Dev Leader</p>
     </v-col>
     <v-col cols="12" md="4" class="out-team-item text-center">
       <img src="@/assets/images/ArhivTudor-circle 2.png" alt="">
